@@ -23,6 +23,7 @@ class Pelicula {
   int voteCount;
   bool video;
   String posterPath;
+  String uniqueId;
   int id;
   bool adult;
   String backdropPath;
@@ -72,11 +73,9 @@ class Pelicula {
   String getPosterImg() {
     if (posterPath == null) {
       return 'https://www.fincasrusticasartic.com/upload_image/sin-imagen.jpg';
-    }
-    else{
+    } else {
       return 'https://image.tmdb.org/t/p/w500/$posterPath';
     }
-    
   }
 
   String getBackdropImg() {
